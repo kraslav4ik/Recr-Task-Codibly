@@ -3,9 +3,12 @@ import java.util.Arrays;
 public class BubbleSort {
 
     public static Number[] sort(Number[] input) {
+        // null check
         if (input == null) {
             throw new RuntimeException("Input is null");
         }
+
+        // time: O(input.length^2) space: const
         int nullCounter = 0;
         for (int i = 0; i < input.length - 1; i ++) {
             for (int j = 0; j < input.length - 1; j++) {
