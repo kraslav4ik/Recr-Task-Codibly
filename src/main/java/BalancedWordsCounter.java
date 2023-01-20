@@ -1,6 +1,5 @@
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+
 
 public class BalancedWordsCounter {
 
@@ -18,7 +17,7 @@ public class BalancedWordsCounter {
         }
         // time: O(word.length^2) space: constant
         int counter = 0;
-        int[] occurrences = new int[57];
+        int[] occurrences = new int[57]; // 57 is a number of characters between 'A' and 'z' in ASCII
         for (int i = 0; i < word.length(); i++) {
             Arrays.fill(occurrences, 0);
 
